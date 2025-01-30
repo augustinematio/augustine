@@ -26,7 +26,7 @@ username = request.form.get('username')
 password = request.form.get('password')
 # Requête SQL
 query = f"SELECT * FROM users WHERE username = '{username}' AND
-password = '{password}'"
+password = '{admin}'"
 result = cursor.execute(query).fetchone()
 if result:
 return f"Bienvenue, {username}!"
